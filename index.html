@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O meu horário escolar - 12.º A</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 25px 12px;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f1f4f8;
+      color: #263238;
+      text-align: center;
+    }
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      background: white;
+      padding: 24px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px #00000012;
+    }
+    header img { max-width: 190px; max-height: 90px; object-fit: contain; }
+    h1 { margin: 12px 0 5px; color: #29465b; font-size: 28px; }
+    .subtitulo { margin: 0 0 22px; color: #687782; }
+    .tabela-wrap { overflow-x: auto; }
+    table {
+      width: 100%;
+      min-width: 650px;
+      margin: 0 auto;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+    th, td { border: 1px solid #9aa8b2; padding: 10px 5px; }
+    th { background: #dce6ee; color: #243746; }
+    th:first-child { width: 92px; }
+    td.hora { background: #f2f4f6; font-size: 12px; font-weight: bold; }
+    td { height: 52px; font-size: 13px; }
+    .port { background: #dcecff; color: #174f91; }
+    .mat { background: #fff0c9; color: #805400; }
+    .bio { background: #dff3df; color: #21652a; }
+    .anfi { background: #f7dff0; color: #8a2767; }
+    .ef, .edf { background: #ffe2d5; color: #98401f; }
+    .g1a { background: #e8e1ff; color: #50379b; }
+    .emrc { background: #d8f2f2; color: #17686a; }
+    .vazio { background: #fff; }
+    h2 { color: #29465b; font-size: 20px; margin: 26px 0 10px; }
+    ul {
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 9px 18px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+    li { font-size: 14px; }
+    li span { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 5px; vertical-align: -1px; }
+    footer { margin-top: 25px; font-size: 12px; color: #7a858d; }
+    @media (max-width: 600px) {
+      main { padding: 16px 10px; }
+      h1 { font-size: 23px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <!-- Guardar o logotipo oficial como imagens/logotipo-agml.png -->
+      <img src="imagens/logotipo-agml.png" alt="Logótipo do Agrupamento de Escolas Monte da Lua"
+           onerror="this.style.display='none'">
+      <h1>O meu horário escolar</h1>
+      <p class="subtitulo">12.º A · Ciências e Tecnologias · 2026/2027</p>
+    </header>
+
+    <div class="tabela-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Hora</th><th>Segunda</th><th>Terça</th><th>Quarta</th><th>Quinta</th><th>Sexta</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="hora">08:00–08:50</td>
+            <td class="port" rowspan="2">PORT</td>
+            <td class="anfi" rowspan="2">ANF</td>
+            <td class="ef" rowspan="2">EDF</td>
+            <td class="vazio" rowspan="6">Tempo livre</td>
+            <td class="bio" rowspan="3">BIO<br><small>T1 · L.B.2</small></td>
+          </tr>
+          <tr>
+            <td class="hora">08:50–09:40</td>
+          </tr>
+          <tr>
+            <td class="hora">10:00–10:50</td>
+            <td class="mat" rowspan="2">MAT A</td>
+            <td class="port" rowspan="2">PORT</td>
+            <td class="mat">MAT A</td>
+          </tr>
+          <tr>
+            <td class="hora">10:50–11:40</td><td class="port">PORT</td><td class="bio">BIO<br><small>T2 · L.B.2</small></td>
+          </tr>
+          <tr>
+            <td class="hora">11:50–12:40</td>
+            <td class="bio">BIO</td><td class="mat">MAT A</td><td class="vazio"></td><td class="vazio"></td>
+          </tr>
+          <tr>
+            <td class="hora">12:40–13:30</td>
+            <td class="vazio"></td><td class="vazio"></td><td class="vazio"></td><td class="vazio"></td>
+          </tr>
+          <tr>
+            <td class="hora">13:35–14:25</td>
+            <td class="vazio"></td><td class="vazio"></td><td class="vazio"></td><td class="emrc">EMRC</td><td class="vazio"></td>
+          </tr>
+          <tr>
+            <td class="hora">14:25–15:15</td>
+            <td class="vazio"></td><td class="vazio"></td><td class="vazio"></td><td class="ef">EF</td><td class="vazio"></td>
+          </tr>
+          <tr>
+            <td class="hora">15:25–16:15</td>
+            <td class="vazio"></td><td class="vazio"></td><td class="vazio"></td><td class="mat" rowspan="2">MAT A</td><td class="vazio"></td>
+          </tr>
+          <tr>
+            <td class="hora">16:15–17:05</td>
+            <td class="vazio"></td><td class="vazio"></td><td class="vazio"></td><td class="vazio"></td>
+          </tr>
+          <tr>
+            <td class="hora">17:20–18:10</td>
+            <td class="vazio"></td><td class="vazio"></td><td class="vazio"></td><td class="anfi">ANF</td><td class="vazio"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Legenda das disciplinas</h2>
+    <ul>
+      <li><span style="background:#dcecff"></span>Português (PORT)</li>
+      <li><span style="background:#fff0c9"></span>Matemática A (MAT A)</li>
+      <li><span style="background:#dff3df"></span>Biologia (BIO)</li>
+      <li><span style="background:#f7dff0"></span>ANF</li>
+      <li><span style="background:#ffe2d5"></span>Educação Física (EDF)</li>
+      <li><span style="background:#e8e1ff"></span>G1A</li>
+      <li><span style="background:#d8f2f2"></span>EMRC</li>
+    </ul>
+    <footer>Horário escolar · 12.º A · 2026/2027</footer>
+  </main>
+</body>
+</html>
